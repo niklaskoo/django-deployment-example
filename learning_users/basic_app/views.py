@@ -71,7 +71,6 @@ def user_login(request):
 
         else:
             print("Someone tried to login and failed")
-            print(f"Username: {username} and password: {password}")
             return HttpResponse("invalid login details supplied")
 
     else:
